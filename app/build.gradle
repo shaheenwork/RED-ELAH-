@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.gms.google-services'
+android {
+    signingConfigs {
+        releaseConfig {
+            storeFile file('/Users/shaheen-mac/E TEAM PROJECTS/Elah key/key.dms')
+            storePassword 'eteam2012'
+            keyAlias = 'elah android'
+            keyPassword 'eteam2012'
+        }
+    }
+    compileSdkVersion 31
+    buildToolsVersion "29.0.2"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.eteam.dufour.mobile"
+        minSdkVersion 19
+        targetSdkVersion 31
+        // versionCode 48
+        // versionName "6.21 (Android Production)"
+
+        versionCode 60
+        versionName "6.30 (RED Production)"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            lintOptions {
+                checkReleaseBuilds false
+                // Or, if you prefer, you can continue to check for errors in release builds,
+                // but continue the build even when errors are found:
+                abortOnError false
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation project(path: ':loaderEx')
+    implementation project(path: ':librarySlideableListView')
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.google.firebase:firebase-analytics:17.4.3'
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.1'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.1'
+    implementation "androidx.cardview:cardview:1.0.0"
+
+
+}

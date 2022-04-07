@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:background="#ffffff" 
+    >
+    <FrameLayout
+        android:id="@+id/lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/newtest"
+        android:visibility="gone"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_height="80dp"/>
+<RelativeLayout 
+        android:id="@+id/tv"
+    android:background="@drawable/top_gradient"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        
+     
+     <RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+     >
+
+     <TextView
+     android:id="@+id/tvtext"
+     android:textColor="#ffffff"
+     android:text="@string/statistics_title"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:textAppearance="@android:style/TextAppearance.Large"
+     android:textStyle="bold"/>
+   <TextView
+     android:id="@+id/field_description"
+     android:textColor="#ffffff"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/tvtext"
+      android:layout_centerHorizontal="true"
+    android:textAppearance="@android:style/TextAppearance.Medium"
+    android:minLines="1"
+	android:inputType="textMultiLine"/>
+
+    
+</RelativeLayout>
+        
+
+ 
+  <Button
+     android:id="@+id/btn_esc"
+     android:drawableLeft="@drawable/left_arrow"
+     android:drawablePadding="5dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/btn_anulla"
+     android:text="@string/aproductdetail_dettprodotto"
+     android:textColor="#ffffff"
+     android:padding="10dp"/>
+
+  </RelativeLayout>
+    </FrameLayout>
+  <ScrollView 
+      android:id="@+id/layout_scroll"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+	  <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	     android:orientation="vertical"
+	    android:background="#ffffff">
+       <TextView
+            android:id="@+id/statistics_last_year"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics_last_year_sales"
+            android:textColor="#ffffff"
+            style="@style/promodetail_lbl_top" />
+         <TextView
+            android:id="@+id/statistics1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="@string/promotion_details_code"
+            android:textColor="#E8ECEE" 
+            android:background="#E8ECEE"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+         <TextView
+             android:id="@+id/field_precendente_one"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             style="@style/promodetail_field"/>
+
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#A1B3C0" />
+         <TextView
+            android:id="@+id/statistics2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="@string/promotion_details_code"
+            android:textColor="#E8ECEE" 
+            android:background="#E8ECEE"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+         <TextView
+            android:id="@+id/field_precendente_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/promodetail_field"/>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#A1B3C0" />
+         <TextView
+            android:id="@+id/statistics3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="@string/promotion_details_code"
+            android:textColor="#E8ECEE" 
+            android:background="#E8ECEE"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+         <TextView
+            android:id="@+id/field_precendente_three"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/promodetail_field"/>
+          <TextView
+            android:id="@+id/statistics_cur_year"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics_current_year_sales"
+            style="@style/promodetail_lbl_top" />
+          <TextView
+            android:id="@+id/statistics4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="@string/promotion_details_code"
+            android:textColor="#E8ECEE" 
+            android:background="#E8ECEE"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+         <TextView
+            android:id="@+id/field_corrente"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/promodetail_field"/>
+         <TextView
+            android:id="@+id/statistics_last_order"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics_last_order"
+            style="@style/promodetail_lbl_top" />
+         <TextView
+            android:id="@+id/field_ultimo_ordine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/promodetail_field"/>
+          <TextView
+            android:id="@+id/statistics_last_delivery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics_last_delivery"
+            style="@style/promodetail_lbl_top"/>
+         <TextView
+            android:id="@+id/field_ultima_cosegna"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/promodetail_field"/>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#A1B3C0" />
+         
+         <TextView
+            android:id="@+id/prezzo_di_listino"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics_prezzo_di_listino"
+            style="@style/promodetail_lbl_top"/>
+         <TextView
+            android:id="@+id/field_prezzo_di_listino"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/promodetail_field"/>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#A1B3C0" />
+        </LinearLayout>
+  </ScrollView>
+</LinearLayout>

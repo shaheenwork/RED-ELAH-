@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.eteam.dufour.customview.UnpressableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:id="@+id/item" 
+	     android:background="@android:color/white" 
+	     android:padding="10dp">
+	    <TextView android:id="@+id/promotion_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="ISOLA CAR. IN FESTA"
+	        android:textAppearance="@android:style/TextAppearance.Large"
+	        android:textColor="#2E2E2E"
+	        android:textStyle="bold"/>
+	    <TextView android:id="@+id/promotion_code"
+	        android:layout_below="@id/promotion_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="NA13C25561"
+	        android:textStyle="bold"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	        android:textColor="#758FA8"
+	        android:layout_marginTop="5dp"/>
+	    
+	    <TextView 
+	        android:id="@+id/hyphen"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="-"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="3dp"
+	        android:layout_toRightOf="@id/promotion_code"
+	        android:layout_alignBottom="@id/promotion_code"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	        android:textColor="#758FA8"/>
+	    
+	    <TextView android:id="@+id/promotion_startdate"
+	        android:layout_alignBottom="@id/promotion_code"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/promotion_promo_startdate"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	         android:textColor="#758FA8"
+	        android:layout_toRightOf="@id/hyphen"/>
+	    <TextView android:id="@+id/promotion_startingdate"
+	        android:layout_alignBottom="@id/promotion_code"
+	        android:layout_toRightOf="@id/promotion_startdate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="11-03-2013"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	         android:textColor="#758FA8"
+	        android:layout_marginRight="3dp"
+	        android:layout_marginLeft="3dp"/>
+	     <TextView android:id="@+id/promotion_al"
+	        android:layout_alignBottom="@id/promotion_code"
+	        android:layout_toRightOf="@id/promotion_startingdate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	        android:text="@string/promotion_promo_al"
+	         android:textColor="#758FA8"/>
+	      <TextView android:id="@+id/promotion_endingdate"
+	        android:layout_alignBottom="@id/promotion_code"
+	        android:layout_toRightOf="@id/promotion_al"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	         android:textColor="#758FA8"
+	         android:text="11-04-2013"
+	         android:layout_marginRight="3dp"
+	        android:layout_marginLeft="3dp"/>
+	   
+	    <Button
+	        android:id="@+id/btn_info"
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dip"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/btn_info"
+	        android:paddingTop="5dip" 
+	        android:focusable="false"
+	        
+	       />
+   </RelativeLayout>
+   
+    	<RelativeLayout 
+	     	android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+	    	android:background="#E8ECEE"
+	    	android:id="@+id/expandable">
+    	<View 
+	         android:id="@+id/childitem"
+	         android:background="@drawable/promo_top"
+	         android:layout_width="fill_parent"
+	         android:layout_height="12dp"
+	         />
+    
+       	<TextView android:id="@+id/item_visibility"
+	        android:layout_below="@id/childitem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15dip"
+	        android:textStyle="bold"
+	        android:text="@string/promotion_child_visibility"
+	        android:textColor="#333333"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="10dp"
+	         />     
+       	<FrameLayout 
+		    android:id="@+id/layout_visibility_spinner"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/item_visibility"
+		    android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true">
+		 	<Spinner
+	            android:id="@+id/promovisibility"
+	            android:layout_width="fill_parent"
+	            android:layout_height="30dp"
+	            android:background="@drawable/bk_spinner"
+	            android:focusable="false"
+	            android:focusableInTouchMode="false" 
+	            android:paddingLeft="15dp"
+	            android:paddingRight="15dp"/>
+		 	<ImageView 
+		 	    android:id="@+id/icon_dropdown"
+		 	    android:layout_width="wrap_content"
+		 	    android:layout_height="wrap_content"
+		 	    android:src="@drawable/icon_spinner_arrow"
+		 	    android:layout_gravity="right|center_vertical"
+		 	    android:layout_marginRight="15dp"/>
+	 	</FrameLayout>  
+  <!--      <Spinner
+            android:id="@+id/promovisibility"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/item_visibility"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/poslin"
+            android:background="@drawable/visibility_spinner"
+            android:focusable="false"
+            android:focusableInTouchMode="false" /> -->
+       <LinearLayout
+	     	android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/item_layout"
+		    android:layout_below="@id/layout_visibility_spinner"
+		    android:orientation="vertical"
+	           >
+         
+        </LinearLayout>
+
+       
+     
+  </RelativeLayout> 
+
+</com.eteam.dufour.customview.UnpressableLinearLayout>

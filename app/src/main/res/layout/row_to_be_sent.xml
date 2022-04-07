@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View 
+        android:id="@+id/divider_one"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#B1C0C6"/>
+     <RelativeLayout
+          android:id="@+id/text_l"
+        android:layout_width="fill_parent"
+        android:layout_height="25dip"
+        android:background="#E8ECEE"
+        android:layout_below="@id/divider_one" >
+       
+	     <TextView 
+	         android:id="@+id/tobesent_date"
+	         android:layout_alignParentLeft="true"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:textColor="#586166"
+	         android:textStyle="bold"
+	         android:layout_marginLeft="5dp"
+	         android:textAppearance="@android:style/TextAppearance.Small"
+	         android:layout_centerVertical="true" />
+     </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/layout_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/text_l">
+	    <TextView 
+	        android:id="@+id/tobesent_name"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:style/TextAppearance.Large"
+	        android:textStyle="bold"
+	        android:textColor="#282828"
+	        android:singleLine="true"
+	        android:ellipsize="end"/>
+	   
+	    
+	     <TextView 
+	        android:id="@+id/tobesent_no"
+	        android:layout_below="@id/tobesent_name"
+	        android:layout_marginLeft="15dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	        android:textStyle="bold"
+	        android:textColor="#63809C"/>
+	     <TextView 
+	        android:id="@+id/hyphen"
+	        android:layout_alignBottom="@id/tobesent_no"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@id/tobesent_no"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	        android:textStyle="bold"
+	        android:text="-"
+	        android:textColor="#63809C"/>
+	     
+	     <TextView 
+	         android:id="@+id/tobesent_address"
+	         android:layout_alignBottom="@id/tobesent_no"
+	         android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@id/hyphen"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	        android:textStyle="bold"
+	        android:textColor="#63809C"/>
+	    <TextView 
+	        android:id="@+id/tobesent_city"
+	        android:layout_alignBottom="@id/tobesent_no"
+	         android:layout_toRightOf="@id/tobesent_address"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	        android:textStyle="bold"
+	        android:layout_marginLeft="10dip"
+	        android:textColor="#2B4044"
+	        android:singleLine="true"
+	        android:ellipsize="end"/>	    
+    </RelativeLayout>
+    
+    
+       
+</RelativeLayout>

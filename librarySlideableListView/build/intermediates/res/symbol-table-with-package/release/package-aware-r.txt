@@ -1,0 +1,4 @@
+com.tjerkw.slideexpandable.library
+id expandable
+id expandable_toggle_button
+id item

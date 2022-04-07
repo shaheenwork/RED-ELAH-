@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+<style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+   <item name="android:windowNoTitle">true</item>
+</style>
+
+<style name="HeaderRow">
+		<item name="android:background">#829CAB</item>
+		
+	</style>
+	<style name="detailpage_header">
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1.0</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:background">@drawable/bk_detail_header</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minLines">1</item>
+		<item name="android:inputType">textMultiLine</item>
+	</style>
+	
+	<style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+	    <item name="android:windowBackground">@android:color/transparent</item>
+	    <item name="android:windowIsFloating">true</item>
+	    <item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="BodyRow">
+		<item name="android:background">#E7ECEF</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="BodyText">
+		<item name="android:textColor">#4F5352</item>
+		<item name="android:shadowColor">#AFFFFFFF</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1.0</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:background">@drawable/bk_detail_header</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minLines">1</item>
+		<item name="android:inputType">textMultiLine</item>
+	</style>
+ 	<style name="detailpage_small_text">
+		<item name="android:textColor">#000000</item>
+		<item name="android:shadowColor">#AFFFFFFF</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1.0</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:background">@drawable/text_box</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">15dp</item>
+		<item name="android:layout_marginLeft">10dp</item>
+              
+	</style>  
+	
+	<style name="symbol">
+		<item name="android:textColor">#000000</item>
+		<item name="android:shadowColor">#AFFFFFFF</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1.0</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">15dp</item>
+		<item name="android:layout_marginLeft">5dp</item>
+              
+	</style>
+	<style name="spinner">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	
+	<style name="ChildSeparater">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/promo_top</item>
+	</style>
+	
+ 
+	<style name="promodetail_lbl">
+	    <item name="android:textColor">#5E87B0</item> 
+	    <item name="android:background">#E8ECEE</item>
+	    <item name="android:paddingLeft">15dp</item>
+	    <item name="android:paddingTop">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+	</style>
+
+	<style name="promodetail_field">
+	    <item name="android:textColor">#3B3B3B</item> 
+	    <item name="android:background">#FFFFFF</item>
+	    <item name="android:paddingLeft">15dp</item>
+	    <item name="android:paddingTop">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:textStyle">normal</item>
+	    <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+		<item name="android:minLines">1</item>
+		<item name="android:inputType">textMultiLine</item>
+	</style>
+	
+	<style name="promodetail_lbl_top">
+	    <item name="android:textColor">#FCFDFE</item> 
+	    <item name="android:background">#839CAC</item>
+	    <item name="android:paddingLeft">15dp</item>
+	    <item name="android:paddingTop">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+	</style>
+	
+
+</resources>

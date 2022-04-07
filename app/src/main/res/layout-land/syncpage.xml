@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    android:keepScreenOn="true"
+    android:id="@+id/root">
+
+	<FrameLayout
+		android:id="@+id/lyt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"
+			android:visibility="gone"
+			android:src="@drawable/newtest" />
+
+		<RelativeLayout
+			android:id="@+id/switch_titlebar"
+			android:layout_width="fill_parent"
+			android:background="@drawable/top_gradient"
+			android:layout_height="wrap_content"
+			android:padding="10dp">
+
+			<TextView
+				android:id="@+id/switch_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerInParent="true"
+				android:layout_marginTop="5dp"
+				android:text="@string/switch_title"
+				android:textAppearance="@android:style/TextAppearance.Large"
+				android:textColor="#ffffff"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/shadow_b2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:background="@drawable/btn_settings" />
+
+		</RelativeLayout>
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_below="@id/lyt"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<com.eteam.utils.TopCropImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:src="@drawable/login_bg"
+			android:scaleType="matrix"
+			android:adjustViewBounds="true"
+			/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ImageButton
+				android:id="@+id/switch_centerbar"
+				android:layout_width="550dp"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_marginBottom="20dp"
+				android:adjustViewBounds="true"
+				android:background="@android:color/transparent"
+				android:scaleType="centerCrop"
+				android:src="@drawable/pdv_button"
+				android:visibility="visible">
+
+			</ImageButton>
+
+	<RelativeLayout
+		android:id="@+id/btn_gestione_ordini"
+		android:layout_width="fill_parent"
+		android:layout_height="45dip"
+		android:visibility="gone"
+		android:layout_below="@id/switch_centerbar"
+		android:layout_marginLeft="15dip"
+		android:layout_marginTop="40dip"
+		android:layout_marginRight="20dip"
+		android:background="@drawable/btn_order">
+
+		<TextView
+			android:id="@+id/switch_thirdtitle"
+			android:layout_width="wrap_content"
+			android:layout_height="40dip"
+			android:layout_alignParentTop="true"
+			android:layout_centerInParent="true"
+			android:paddingTop="10dip"
+			android:text="@string/switch_thirdtitle"
+			android:textColor="#ffffff" />
+	</RelativeLayout>
+   
+   <Button 
+       android:id="@+id/export_db_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/export"
+       android:visibility="gone"
+       android:layout_centerInParent="true"/>
+
+   <View 
+       android:id="@+id/bottom"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:layout_alignParentBottom="true"/>
+   
+    <TextView 
+       android:id="@+id/lbl_version"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="@android:color/white"
+       android:textAppearance="@android:style/TextAppearance.Small"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="10dp"
+       android:layout_above="@id/bottom"
+       android:layout_marginBottom="10dp" />
+
+			<Button
+				android:id="@+id/switch_synch"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="25dp"
+				android:background="@drawable/btn_sync" />
+     
+     <LinearLayout 
+         android:id="@+id/layout_sync_field"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+		  android:layout_above="@id/switch_synch"
+         android:layout_marginTop="10dp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="10dp">
+	     <TextView 
+	       android:id="@+id/lbl_sync"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textColor="#fff"
+	       android:text="Ultima Sincronizzazione"/>
+	     <TextView 
+	       android:id="@+id/field_date"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textColor="#fff"
+	       android:text="11-04-2013"
+	       android:layout_marginLeft="4dp"/>
+	     <TextView 
+	       android:id="@+id/field_time"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textColor="#fff"
+	       android:text="12:20"
+	       android:textStyle="bold"
+	       android:layout_marginLeft="4dp"/>
+     </LinearLayout>
+     
+     <TextView 
+         android:id="@+id/lbl_update_app"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/msg_sync_needed"
+         android:layout_centerInParent="true"
+         android:textColor="@android:color/white"
+         android:visibility="gone"/>
+     <RelativeLayout 
+         android:id="@+id/layout_update"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:visibility="gone"
+         android:background="@drawable/bk_update_default">
+         <ImageView 
+             android:id="@+id/icon_image"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/icon_i"
+             android:padding="15dp"
+             android:background="#5C97CE"/>
+         <TextView 
+             android:id="@+id/btn_update"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/icon_image"
+             android:textColor="#639BD0"
+             android:text="@string/msg_update_available"
+             android:layout_centerVertical="true"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+             android:gravity="center"
+             android:layout_alignTop="@id/icon_image"
+             android:layout_alignBottom="@id/icon_image"
+             android:layout_marginTop="1px"
+             android:layout_marginBottom="1px"
+             android:background="@drawable/btn_update"/>
+         <ImageView 
+             android:id="@+id/btn_close"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/close"
+             android:layout_toRightOf="@id/btn_update"
+             android:padding="15dp"
+             android:background="@drawable/btn_update_close"
+             android:layout_alignTop="@id/icon_image"
+             android:layout_alignBottom="@id/icon_image"/>
+     </RelativeLayout>
+		</RelativeLayout>
+	</FrameLayout>
+</RelativeLayout>

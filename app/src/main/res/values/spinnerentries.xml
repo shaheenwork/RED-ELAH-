@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="si_no">
+        <item></item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+    
+    <string-array name="visibility">
+        <item></item>
+        <item>Isola</item>
+        <item>Testata</item>
+        <item>Fuori banco</item>
+    </string-array>
+    
+    <string-array name="facing">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    
+    <string-array name="poslnone">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    
+    <string-array name="poslntwo">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    
+     <string-array name="assort">
+        <item></item>
+        <item>Disponibile</item>
+        <item>NonAssortito</item>
+        <item>Rottura di stock</item>
+        <item>Sospensione</item>
+    </string-array>
+    
+    <string-array name="prezzopromo">
+        <item></item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+        
+</resources>

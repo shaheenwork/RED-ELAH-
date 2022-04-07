@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<FrameLayout
+		android:id="@+id/lyt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:src="@drawable/newtest"
+			android:adjustViewBounds="true"
+			android:visibility="gone"
+			android:scaleType="centerCrop"
+			android:layout_height="90dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_titlebar"
+		android:background="@drawable/top_gradient"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+	   <LinearLayout
+	        android:id="@+id/layout_title_field"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_centerInParent="true"
+		    android:gravity="center">
+		  <TextView
+		     android:id="@+id/field_title"
+		     android:textColor="#ffffff"
+		     android:text="@string/promozioni"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:textAppearance="@android:style/TextAppearance.Large"
+		     android:textStyle="bold"  />
+		   <TextView
+		       android:id="@+id/field_cust_details"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:text="@string/da_inviare"
+		       android:textColor="#ffffff"/>
+		   <TextView
+		        android:id="@+id/field_cust_address"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/da_inviare"
+		        android:textColor="#ffffff"/>
+
+    	</LinearLayout>
+
+		<Button
+	     android:id="@+id/btn_esci"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:background="@drawable/btn_anulla"
+	     android:text="@string/esci_dall_attivita"
+	     android:textColor="#ffffff"
+	     android:padding="10dp"
+	     android:singleLine="true"
+	     android:textAppearance="@android:style/TextAppearance.Small"
+	     android:layout_centerVertical="true"/>
+
+
+
+     <LinearLayout
+         android:id="@+id/layout_cluster"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="5dp"
+         android:layout_marginEnd="5dp"
+         android:orientation="horizontal"
+         android:visibility="visible">
+          <Button
+	         android:id="@+id/lbl_cluster"
+
+			  android:background="@drawable/btn_anulla"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+			  android:gravity="center"
+	         android:text="@string/cluster_punto_vendita"
+	         android:textAppearance="@android:style/TextAppearance.Small"
+	         android:textColor="#ffffff"
+	         android:layout_marginRight="10dp"
+	         android:layout_marginEnd="10dp"/>
+
+
+     </LinearLayout>
+
+
+  </RelativeLayout>
+
+
+	</FrameLayout>
+  <View
+      android:id="@+id/divider_one"
+      android:layout_width="fill_parent"
+      android:layout_height="1px"
+      android:background="#0B4668"
+      android:layout_below="@id/lyt"/>
+
+  <View
+      android:id="@+id/divider_two"
+      android:layout_width="fill_parent"
+      android:layout_height="1px"
+      android:background="#0B4668"
+      android:layout_below="@id/divider_one"/>
+	<TabHost
+	    android:id="@android:id/tabhost"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#EFEFEF"
+	    android:layout_below="@id/divider_two">
+
+	    <RelativeLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent">
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"/>
+	 		<FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_above="@android:id/tabs">
+
+	            <FrameLayout
+	                android:id="@+id/tab_prodotti"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent" />
+
+	            <FrameLayout
+	                android:id="@+id/tab_promozioni"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent" />
+	 			<FrameLayout
+	                android:id="@+id/tab_concorrenza"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent" />
+	  			<FrameLayout
+	                android:id="@+id/tab_chiusura_attivita"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent" />
+	        </FrameLayout>
+
+
+
+	    </RelativeLayout>
+	</TabHost>
+
+</RelativeLayout>

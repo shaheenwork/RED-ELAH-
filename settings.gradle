@@ -1,0 +1,2 @@
+include ':app', ':librarySlideableListView', ':loaderEx'
+rootProject.name='Elah Android'

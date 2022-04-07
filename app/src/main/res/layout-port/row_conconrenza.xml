@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<!--     <View 
+        android:id="@id/divider_one"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#B2B9BF"/> -->
+    <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/item"
+     android:background="@android:color/white">
+		    <TextView android:id="@+id/lbl_competitor_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"     
+		        android:textAppearance="@android:style/TextAppearance.Medium"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginStart="15dp"
+		        android:textColor="#4B4B4B"/>
+		    <TextView android:id="@+id/lbl_product_description"
+		        android:layout_below="@id/lbl_competitor_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginStart="15dp"
+		        android:textAppearance="@android:style/TextAppearance.Large"
+		        android:textStyle="bold"
+		        android:textColor="#333333"/>
+		   
+   </RelativeLayout>
+   
+   <RelativeLayout
+     	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/expandable"
+    	android:background="#E7EDED">
+<!-- <View android:id="@+id/compitition_line"
+      android:layout_width="fill_parent"
+      android:layout_below="@id/product_description"
+      android:background="@drawable/line"
+      android:layout_marginTop="10dp"
+      android:layout_height="1px"
+      android:visibility="visible"
+      />  -->
+       
+	 	<View 
+	         android:id="@+id/ChildStarter"
+	         android:background="@drawable/promo_top"
+	         android:layout_width="fill_parent"
+	         android:layout_height="12dp"/>
+		<TextView android:id="@+id/competitor_name"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:textSize="15sp"
+		     android:text="@string/promotion_child_visibility"
+		     android:textColor="#333333"
+		     android:textStyle="bold"
+		     android:layout_marginTop="10dp"
+		     android:layout_marginLeft="15dp"
+		     android:layout_marginStart="15dp"
+		        />
+	 	<FrameLayout 
+		    android:id="@+id/layout_visibility_spinner"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/competitor_name"
+		    android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true">
+	 	<Spinner
+            android:id="@+id/competitor_visibility"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bk_spinner"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+	 	<ImageView 
+	 	    android:id="@+id/icon_dropdown"
+	 	    android:layout_width="wrap_content"
+	 	    android:layout_height="wrap_content"
+	 	    android:src="@drawable/icon_spinner_arrow"
+	 	    android:layout_gravity="end|center_vertical"
+	 	    android:layout_marginRight="15dp"
+	 	    android:layout_marginEnd="15dp"
+	 	    android:contentDescription="@string/empty"/>
+	 	</FrameLayout>
+	 
+	 	<View 
+	 	    android:id="@+id/line"
+         	android:layout_width="fill_parent"
+         	android:layout_below="@id/layout_visibility_spinner"
+         	android:background="#91A0A5"
+         	android:layout_marginTop="10dp"
+         	android:layout_height="1px"/> 
+	    <RelativeLayout
+	        android:id="@+id/sub_header"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#E8ECEE"
+	        android:layout_below="@id/line"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp">
+
+	        <TextView
+	            android:id="@+id/volantino"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/volantino"
+	            android:textColor="#2F3332"
+	            android:textAppearance="@android:style/TextAppearance.Small" 
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentStart="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginStart="10dp"
+	            android:layout_centerVertical="true"/>
+	
+	        <Spinner
+	            android:id="@+id/volantino_spinner"
+	            android:layout_width="65dp"
+	            android:layout_height="32dip"
+	            android:background="@drawable/edit_box_tr_bk"
+	            android:inputType="number"
+	            android:textColor="#000000"
+	            android:layout_marginLeft="2dp" 
+	            android:layout_marginStart="2dp"
+	            android:layout_toRightOf="@id/volantino"
+	            android:layout_toEndOf="@id/volantino"
+	             android:paddingLeft="10dp"
+	             android:paddingRight="10dp">
+	        </Spinner>
+		
+	        <TextView
+	            android:id="@+id/prezzo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/prezzo"
+	            android:textColor="#2F3332"
+	            android:textAppearance="@android:style/TextAppearance.Small" 
+	            android:layout_marginLeft="19dp"
+	            android:layout_marginStart="19dp"
+	            android:singleLine="true"
+	            android:maxLength="15"
+	            android:layout_toRightOf="@id/volantino_spinner"
+	            android:layout_toEndOf="@id/volantino_spinner"
+	            android:layout_centerVertical="true"/>
+	
+	        <com.eteam.dufour.customview.PannableEdit
+	            android:id="@+id/prezzo_edit"
+	            android:layout_width="85dp"
+	            android:layout_height="32dip"
+	            android:background="@drawable/editbox_bk"
+	             android:paddingLeft="10dp"
+	             android:paddingRight="10dp"
+	             android:layout_marginLeft="2dp" 
+	             android:layout_marginStart="2dp"
+	             android:layout_toEndOf="@id/prezzo"
+	             android:layout_toRightOf="@id/prezzo"
+	             android:inputType="numberDecimal"
+	             android:singleLine="true"
+	             android:maxLength="15"
+	             android:digits="0123456789.,"/>
+		     <LinearLayout 
+		         android:id="@+id/taglio_frame"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true">
+		           <TextView
+		            android:id="@+id/taglio"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/taglio_pz"
+		            android:textColor="#2F3332"
+		            android:singleLine="true"
+		            android:textAppearance="@android:style/TextAppearance.Small"/>
+		
+		        <com.eteam.dufour.customview.PannableEdit
+		            android:id="@+id/taglio_edit"
+		            android:layout_width="74dp"
+		            android:layout_height="32dip"
+		            android:background="@drawable/editbox_bk"
+		            android:inputType="numberDecimal"
+		            android:digits="0123456789.,"
+		            android:singleLine="true"
+		            android:maxLength="15"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"/>
+	        </LinearLayout>     
+
+	        
+	        <Spinner
+	            android:id="@+id/poslin_spinner2"
+	            android:layout_width="34dp"
+	            android:layout_height="32dip"
+	            android:background="@drawable/edit_box_tr_bk"
+	            android:layout_alignParentEnd="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="10dp" 
+	            android:layout_marginEnd="10dp"
+	            android:layout_marginLeft="4dp"
+	            android:layout_marginStart="4dp"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp" />
+	        
+	        <TextView
+	            android:id="@+id/poslin_by"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/slash"
+	            android:textColor="#333333"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:layout_toLeftOf="@id/poslin_spinner2"
+	            android:layout_toStartOf="@id/poslin_spinner2"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="4dp"
+	            android:layout_marginStart="4dp"/>
+	        <Spinner
+	            android:id="@+id/poslin_spinner1"
+	            android:layout_width="34dp"
+	            android:layout_height="32dip"
+	            android:layout_toLeftOf="@id/poslin_by"
+	            android:layout_toStartOf="@id/poslin_by"
+	            android:background="@drawable/edit_box_tr_bk" 
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp" />
+	        <TextView
+	            android:id="@+id/poslin"
+	            android:layout_width="32dp"
+	            android:lines="2"
+	            android:layout_height="wrap_content"
+	             android:text="@string/posln"
+	            android:textColor="#2F3332"
+	            android:textAppearance="@android:style/TextAppearance.Small"
+	            android:layout_toLeftOf="@id/poslin_spinner1"
+	            android:layout_toStartOf="@id/poslin_spinner1"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginEnd="10dp"/>
+	
+	        <Spinner
+	            android:id="@+id/facing_spinner"
+	            android:layout_width="50dp"
+	            android:layout_height="32dip"
+	            android:background="@drawable/edit_box_tr_bk"
+	            android:inputType="number"
+	            android:textColor="#000000"
+	            android:textSize="12sp" 
+	            android:layout_toLeftOf="@id/poslin"
+	            android:layout_toStartOf="@id/poslin"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginEnd="20dp"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"/>
+	        
+	         <TextView
+	            android:id="@+id/facing"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/facing"
+	            android:textColor="#2F3332"
+	            android:textAppearance="@android:style/TextAppearance.Small"
+	            android:layout_toLeftOf="@id/facing_spinner"
+	            android:layout_toStartOf="@id/facing_spinner"
+	            android:layout_centerVertical="true" />
+	
+	        
+	
+
+	
+	        
+    </RelativeLayout>
+	   
+    <TextView android:id="@+id/note"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:textSize="15sp"
+		     android:text="@string/note"
+		     android:textColor="#333333"
+		     android:textStyle="bold"
+		     android:layout_below="@id/sub_header"
+		     android:layout_marginTop="10dp"
+		     android:layout_marginLeft="15dp"
+		     android:layout_marginStart="15dp"
+		        />
+	 <com.eteam.dufour.customview.PannableEdit
+            android:id="@+id/note_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/note"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="14dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bk_note"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+   		<View 
+	        android:id="@+id/childcloser"
+	         android:layout_width="fill_parent"
+	         android:layout_below="@id/note_edit"
+	         android:layout_height="12dp"
+	         android:background="@drawable/promo_bottom"
+	         />
+   
+    
+       <FrameLayout 
+           android:id="@+id/btn_minimise"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_below="@id/childcloser"
+           android:focusable="false"
+           android:focusableInTouchMode="false">
+	        <Button
+		        android:id="@+id/minimise_child"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:background="@drawable/icon_arrow_up"/>
+        </FrameLayout>
+        
+       <EditText
+	            android:id="@+id/dummyFocusNumber"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/editbox_bk"
+	            android:inputType="numberDecimal"
+	            android:digits="0123456789."
+	            android:textColor="@android:color/black"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:singleLine="true"
+	            android:maxLength="1"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentEnd="true"
+	            android:textCursorDrawable="@null"/>
+       	     
+       	     <EditText
+	            android:id="@+id/dummyFocusText"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/editbox_bk"
+	            android:inputType="text"
+	            android:textColor="@android:color/black"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:singleLine="true"
+	            android:maxLength="1"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentEnd="true"
+	            android:textCursorDrawable="@null"/>
+     </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" 
+    android:layout_width="227dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bk_logout_popup"
+    android:orientation="vertical">
+	
+	    <Button 
+	        android:id="@+id/btn_schema"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/SCHERMATA_PRINICIPALE"
+	        android:background="@drawable/btn_pop_up"
+	        android:layout_weight="0.5"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"/>
+	     <Button 
+	        android:id="@+id/btn_esci"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ESCI"
+	        android:background="@drawable/btn_pop_up"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="0.5"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginBottom="10dp"/>
+</LinearLayout>

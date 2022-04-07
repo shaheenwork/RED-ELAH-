@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+	<FrameLayout
+		android:id="@+id/lyt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:src="@drawable/newtest"
+		android:adjustViewBounds="true"
+		android:visibility="gone"
+		android:scaleType="centerCrop"
+		android:layout_height="70dp"/>
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+		android:background="@drawable/top_gradient"
+        android:layout_height="wrap_content"
+         android:padding="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_anulla"
+            android:text="@string/chiudi"
+            android:id="@+id/btn_back"
+            android:textColor="#ffffff"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/label_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/promotion_details_title"
+                android:textColor="#FDFDFD"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <TextView
+                android:id="@+id/field_title_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FDFDFD"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+        </LinearLayout>
+    </RelativeLayout>
+	</FrameLayout>
+	<ScrollView 
+	    android:id="@+id/scroll_view" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/lyt">
+    
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:orientation="vertical">
+	            
+	    <TextView
+	      android:id="@+id/lbl_compaign"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/promotion_details_compaign"
+	      style="@style/promodetail_lbl_top"/>
+	    
+	    <TextView
+	      android:id="@+id/lbl_camp_code"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/promotion_details_code"
+	      style="@style/promodetail_lbl"/>
+	    
+		<TextView
+	      android:id="@+id/field_camp_code"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      style="@style/promodetail_field"/>
+		
+		 <View
+	      android:layout_width="fill_parent"
+	      android:layout_height="1px"
+	      android:background="#A1B3C0" />
+	
+	      <TextView
+	       android:id="@+id/details_description"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="@string/promotion_details_description"
+	       style="@style/promodetail_lbl"/>  
+		 
+		 <TextView
+	       android:id="@+id/field_camp_desc"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       style="@style/promodetail_field"/>
+		<TextView
+	       android:id="@+id/details_promotion"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="@string/promotion_details_promotion"
+	       style="@style/promodetail_lbl_top"/>
+	    <TextView
+	            android:id="@+id/details_code"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/promotion_details_code"
+	            android:textColor="#5E87B0" 
+	            style="@style/promodetail_lbl"/>
+	
+	    <TextView
+	      android:id="@+id/field_promo_code"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      style="@style/promodetail_field" />
+		<View
+	       android:layout_width="fill_parent"
+	       android:layout_height="2dp"
+	       android:background="#A1B3C0" />
+	     <TextView
+	       android:id="@+id/details_promodescription"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="@string/promotion_details_description"
+	       style="@style/promodetail_lbl" />
+	
+	
+	     <TextView
+	         android:id="@+id/field_promo_desc"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         style="@style/promodetail_field"/>
+	
+	     <TextView
+	         android:id="@+id/details_sellin"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:text="@string/promotion_details_sellin"
+	         android:textColor="#5E87B0"
+	         style="@style/promodetail_lbl" />
+	
+	     <TextView
+	      android:id="@+id/field_sell_in"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      style="@style/promodetail_field"/>
+	
+	
+	     <View
+	         android:layout_width="fill_parent"
+	         android:layout_height="2dp"
+	         android:background="#A1B3C0" />
+	
+	     <TextView
+	         android:id="@+id/details_sellout"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:text="@string/promotion_details_sellout"
+	         style="@style/promodetail_lbl"/>
+	
+	    <TextView
+	        android:id="@+id/field_sell_out"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        style="@style/promodetail_field"/>
+	     
+	     <TextView
+	         android:id="@+id/lbl_orderperiod"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:text="@string/promotion_details_orderperiod"
+	         style="@style/promodetail_lbl" />
+	     
+	     <TextView
+	         android:id="@+id/field_periodo_oridine"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         style="@style/promodetail_field"/>
+	
+	     <View
+	         android:layout_width="fill_parent"
+	         android:layout_height="2dp"
+	         android:background="#A1B3C0" />
+	
+	     <TextView
+	         android:id="@+id/lbl_discountrate"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:text="@string/promotion_details_discountrate"
+	         style="@style/promodetail_lbl"/>
+	    
+	     <TextView
+	         android:id="@+id/field_sconto_valuta"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         style="@style/promodetail_field"/>
+	
+	     <View
+	         android:layout_width="fill_parent"
+	         android:layout_height="2dp"
+	         android:background="#A1B3C0" />
+	
+	     <TextView
+	         android:id="@+id/lbl_discountgoods"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:text="@string/promotion_details_discountgoods"
+	         style="@style/promodetail_lbl" />
+	
+	     <TextView
+	         android:id="@+id/field_sconto_merce"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         style="@style/promodetail_field"/>
+	    
+	      <TextView
+	          android:id="@+id/details_listofpref"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:text="@string/promotion_details_listofpref"
+	          style="@style/promodetail_lbl_top"/>
+	    
+	       <View
+	  		android:id="@+id/line"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1px"
+	        android:background="#87A0B0"
+	        android:layout_marginTop="3dp" />
+			<LinearLayout 
+			    android:id="@+id/layout_items"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			    
+			</LinearLayout>
+	   		
+	   </LinearLayout> 
+	</ScrollView>
+</RelativeLayout>

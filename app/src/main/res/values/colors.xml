@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="red">#FF0000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="popup_window_button_background">#849CAD</color>
+	<color name="highlightedlist">#B7C3CA</color>
+	
+	<!-- Promo Colors -->
+
+	<color name="promo_active">#148152</color>
+	<color name="promo_expire">#c32b2b</color>
+	<color name="promo_future">#ffb93f</color>
+	<color name="promo_inactive">#b7c3ca</color>
+
+	<!-- Item selection colors -->
+	<color name="item_selected">#D8E1E6</color>
+	<color name="item_incomplete">#40F11515</color>
+	<color name="item_unselected">#FFFFFF</color>
+	
+	<color name="activity_background">#B4000000</color>
+
+
+
+
+
+	//dashboard
+	<color name="d_red">#ce0002 </color>
+	<color name="d_nochange">#a8c3d3 </color>
+	<color name="d_green">#299f0d </color>
+	<color name="d_grey">#829cab </color>
+	<color name="d_light_grey">#e8ebf0</color>
+
+	<color name="d_circle_red">#be0608 </color>
+	<color name="d_circle_green">#159117 </color>
+	<color name="d_circle_yellow">#eed205 </color>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+    <LinearLayout
+        android:id="@+id/layout_btn" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+	    <TextView 
+	        android:id="@+id/lbl_success_msg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/msg_invia_dati_survey_failed"
+	        android:textColor="@android:color/black"
+	        android:textAppearance="@android:style/TextAppearance.Small"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="45dp"
+	        android:layout_marginRight="45dp"/>
+	    
+	    <Button 
+	        android:id="@+id/btn_success"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/survey_sucess_btn"
+	        android:layout_gravity="center_horizontal"
+	        android:textStyle="bold"
+	        android:paddingTop="20dp"
+	        android:paddingBottom="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

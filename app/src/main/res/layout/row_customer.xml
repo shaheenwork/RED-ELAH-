@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <com.eteam.dufour.customview.UnpressableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/layout_details"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp">
+   <TextView 
+       android:id="@+id/lbl_name"
+       android:layout_marginLeft="15dp"
+       android:layout_marginBottom="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="@android:style/TextAppearance.Large"
+       android:textStyle="bold"
+       android:textColor="#282828"
+       android:singleLine="true"
+       android:ellipsize="end"/>
+  
+   
+    <TextView android:id="@+id/lbl_no"
+       android:layout_below="@id/lbl_name"
+       android:layout_marginLeft="15dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="@android:style/TextAppearance.Medium"
+       android:textStyle="bold"
+       android:textColor="#63809C"
+       android:singleLine="true"
+       android:ellipsize="end"/>
+    <TextView 
+       android:id="@+id/hyphen"
+       android:layout_alignBottom="@id/lbl_no"
+       android:layout_marginLeft="5dp"
+       android:layout_toRightOf="@id/lbl_no"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="@android:style/TextAppearance.Medium"
+       android:textStyle="bold"
+       android:text="-"
+       android:textColor="#63809C"/>
+    
+    <TextView 
+        android:id="@+id/lbl_address"
+        android:layout_alignBottom="@id/lbl_no"
+        android:layout_marginLeft="5dp"
+       android:layout_toRightOf="@id/hyphen"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="@android:style/TextAppearance.Medium"
+       android:textStyle="bold"
+       android:textColor="#63809C"
+       android:singleLine="true"
+       android:ellipsize="end"/>
+    
+    <ImageView 
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_info"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+    
+    <TextView 
+       android:id="@+id/lbl_city"
+       android:layout_alignBottom="@id/lbl_no"
+        android:layout_toRightOf="@id/lbl_address"
+        android:layout_toLeftOf="@id/btn_info"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="@android:style/TextAppearance.Medium"
+       android:textStyle="bold"
+       android:layout_marginLeft="10dip"
+       android:textColor="#2B4044"
+       android:singleLine="true"
+       android:ellipsize="end"
+       android:layout_marginRight="10dp"/>
+   
+
+  </com.eteam.dufour.customview.UnpressableRelativeLayout>

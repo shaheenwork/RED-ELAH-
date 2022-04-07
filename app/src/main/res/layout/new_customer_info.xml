@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<FrameLayout
+		android:id="@+id/lyt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:src="@drawable/newtest"
+		android:visibility="gone"
+		android:scaleType="centerCrop"
+		android:adjustViewBounds="true"
+		android:layout_height="90dp"/>
+    <RelativeLayout
+        android:id="@+id/title"
+		android:background="@drawable/top_gradient"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" >
+        <Button  
+            android:id="@+id/btn_chiudi" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/chiudi"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_anulla"
+           	android:padding="10dp"/> 
+           <TextView 
+               android:id="@+id/lbl_cust_details"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:textAppearance="@android:style/TextAppearance.Large"
+               android:textStyle="bold"
+               android:textColor="@android:color/white"
+               android:layout_toRightOf="@id/btn_chiudi"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:singleLine="true"
+               android:gravity="center"
+               android:ellipsize="marquee"
+               android:marqueeRepeatLimit="marquee_forever"/>
+    </RelativeLayout>
+	</FrameLayout>
+    <ScrollView 
+        android:id="@+id/layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white">
+        <LinearLayout 
+            android:id="@+id/layout_inner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+	            android:id="@+id/details_compaign"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_client"
+	            android:textColor="#ffffff" 
+	            android:background="#8596A7"/>
+            
+              <TextView
+	            android:id="@+id/lbl_ragione_sociale"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_company"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_ragione_sociale"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_ragione_sociale"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+               <TextView
+	            android:id="@+id/lbl_indirizzo"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_address"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_indirizzo"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_indirizzo"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+            
+              <TextView
+	            android:id="@+id/lbl_citta"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_citta"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_citta"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_citta"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_cap"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_cap"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_cap"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_cap"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_pv"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_pv"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_pv"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_pv"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_partita_iva"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_partita_iva"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_partita_iva"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_partita_iva"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+
+              <TextView
+	            android:id="@+id/lbl_riferimento"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_ref"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_riferimento"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_riferimento"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_telefono"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_telefono"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_telefono"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_telefono"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>     
+          
+              <TextView
+	            android:id="@+id/lbl_fax"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_fax"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_fax"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_fax"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+
+
+			 
+              <TextView
+	            android:id="@+id/lbl_email"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_email"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_email"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_email"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+			 <TextView
+	            android:id="@+id/details_fatturazione"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_fatturazione"
+	            android:textColor="#ffffff" 
+	            android:background="#8596A7"/> -->
+              
+              <TextView
+	            android:id="@+id/lbl_fat_ragione_sociale"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_company"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_fat_ragione_sociale"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_fat_ragione_sociale"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_fat_indirizzo"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_address"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_fat_indirizzo"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_fat_indirizzo"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_fat_citta"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_citta"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_fat_citta"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_fat_citta"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_fat_cap"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_cap"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_fat_cap"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_fat_cap"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_fat_pv"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_pv"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_fat_pv"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_fat_pv"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_fat_partita_iva"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_partita_iva"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_fat_partita_iva"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_fat_partita_iva"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              <TextView
+	            android:id="@+id/lbl_fat_riferimento"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:text="@string/p_details_ref"
+	            android:textColor="#6282AB" 
+	            android:background="#E5E9EB"/>
+              
+              <TextView
+	            android:id="@+id/field_fat_riferimento"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textStyle="bold"
+	            android:textAppearance="@android:style/TextAppearance.Medium"
+	            android:paddingLeft="15dp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:textColor="#2D2D2D"/>
+              
+              <View 
+                  android:id="@+id/divider_fat_riferimento"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:background="#9FAEBE"/>
+              
+              			 
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

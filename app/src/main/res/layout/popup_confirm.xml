@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_background"
+	android:layout_gravity="center"
+	style="@android:style/Theme.Translucent.NoTitleBar">
+    <RelativeLayout
+    android:layout_width="400dip"
+    android:layout_height="300dip"
+	android:background="@drawable/bk_alert"
+	android:layout_gravity="center">
+     
+     <TextView android:text="@string/msg_continue"
+         android:id="@+id/TextView01"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#333333" 
+         android:textAppearance="@android:style/TextAppearance.Medium"
+         android:layout_centerHorizontal="true"/>
+     
+     <TextView android:text="BCCC"
+         android:id="@+id/field_customer_code"
+         android:textStyle="bold"
+         android:layout_marginTop="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#333333" 
+         android:textAppearance="@android:style/TextAppearance.Large"
+         android:layout_below="@id/TextView01"
+         android:layout_alignLeft="@id/TextView01"/>
+      
+       <TextView 
+         android:text="\?"
+         android:id="@+id/field_qns_mark"
+         android:textStyle="bold"
+         android:layout_marginTop="5dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#333333"
+         android:layout_marginLeft="5dp" 
+         android:textAppearance="@android:style/TextAppearance.Large"
+         android:layout_alignBottom="@id/field_customer_code"
+         android:layout_toRightOf="@id/field_customer_code"/>  
+     
+     <Button 
+         android:id="@+id/btn_no"
+          android:layout_width="206dp" 
+          android:background="@drawable/btn_red_popup"
+          android:layout_height="45dp"
+          android:layout_centerHorizontal="true"
+          android:text="NO"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="60dp" />
+     
+     
+     <Button android:id="@+id/btn_si"
+          android:layout_width="206dp" 
+          android:layout_marginTop="20dp"
+          android:layout_height="45dp"
+          android:layout_centerHorizontal="true"
+          android:text="SI" 
+          android:layout_above="@id/btn_no"
+          android:layout_marginBottom="20dp"
+          android:background="@drawable/btn_blue_popup" />
+     
+     </RelativeLayout>
+     
+</FrameLayout>

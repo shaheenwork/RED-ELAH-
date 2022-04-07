@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white"
+	android:focusable="true"
+	android:focusableInTouchMode="true">
+
+	<RelativeLayout
+		android:id="@+id/tv2"
+		android:layout_width="fill_parent"
+		android:layout_height="55dp"
+		android:background="#003D62" >
+		<RelativeLayout
+			android:id="@+id/layout_search"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@drawable/bk_search_box"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="10dp">
+			<ImageView
+				android:id="@+id/icon_search"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/icon_search"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"/>
+
+			<EditText
+				android:id="@+id/field_search"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:hint="@string/hint_prodotti_search"
+				android:textColor="#333333"
+				android:background="@android:color/transparent"
+				android:layout_toRightOf="@id/icon_search"
+				android:layout_centerVertical="true"
+				android:singleLine="true"
+				android:focusableInTouchMode="true"/>
+		</RelativeLayout>
+	</RelativeLayout>
+	<View
+		android:id="@+id/divider_one"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_below="@id/tv2"
+		android:background="#0A4263"/>
+	<View
+		android:id="@+id/divider_two"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_below="@id/divider_one"
+		android:background="#174F70"/>
+	<View
+		android:id="@+id/divider_three"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_below="@id/divider_two"
+		android:background="#013B60"/>
+	<LinearLayout
+		android:id="@+id/tv3"
+		android:layout_below="@id/divider_three"
+		android:background="#003D62"
+		android:layout_width="fill_parent"
+		android:layout_height="55dp"
+		android:orientation="horizontal"
+		android:gravity="center_vertical">"
+		<RelativeLayout
+			android:id="@+id/layout_marchio"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.3" >
+			<Spinner
+				android:id="@+id/marchio"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/bk_top_spinners"
+				android:textColor="@android:color/white"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="5dp"
+				android:paddingLeft="15dp"
+				android:paddingRight="15dp"
+				/>
+			<ImageView
+				android:id="@+id/icon_marchio_dropdown"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/spinner_drop_down"
+				android:layout_alignRight="@id/marchio"
+				android:layout_marginRight="15dp"
+				android:layout_centerVertical="true"/>
+		</RelativeLayout>
+		<RelativeLayout
+			android:id="@+id/layout_linea"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.3" >
+			<Spinner
+				android:id="@+id/linea"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/bk_top_spinners"
+				android:textColor="@android:color/white"
+
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:paddingLeft="15dp"
+				android:paddingRight="15dp"
+				/>
+			<ImageView
+				android:id="@+id/icon_linea_dropdown"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/spinner_drop_down"
+				android:layout_alignRight="@id/linea"
+				android:layout_marginRight="15dp"
+				android:layout_centerVertical="true"/>
+		</RelativeLayout>
+		<RelativeLayout
+			android:id="@+id/layout_macrofamiglia"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.3" >
+
+			<Spinner
+				android:id="@+id/macrofamiglia"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/bk_top_spinners"
+				android:textColor="@android:color/white"
+
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="15dp"
+				android:paddingLeft="15dp"
+				android:paddingRight="15dp"
+				/>
+			<ImageView
+				android:id="@+id/icon_macrofamiglia_dropdown"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/spinner_drop_down"
+				android:layout_alignRight="@id/macrofamiglia"
+				android:layout_marginRight="10dp"
+				android:layout_centerVertical="true"/>
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/divider_four"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_below="@id/tv3"
+		android:background="#1D4E6C"
+
+		> </View>
+	<View
+		android:id="@+id/divider_five"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_below="@id/divider_four"
+		android:background="#9EBDCF"/>
+
+
+	<RelativeLayout
+		android:id="@+id/buttons_rl"
+		android:layout_below="@id/divider_five"
+		android:layout_width="fill_parent"
+		android:layout_height="55dip"
+
+		android:background="#86A0AF">
+
+		<com.eteam.dufour.customview.SegmentedRadioGroup
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_margin="5dip"
+			android:orientation="horizontal"
+			android:id="@+id/segment_text"
+			android:checkedButton="@+id/btn_assortimento"
+			android:layout_centerInParent="true" >
+			<RadioButton
+				android:id="@+id/btn_assortimento"
+				android:minWidth="250dip"
+				android:minHeight="50dip"
+				android:text="@string/assortimento"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:button="@null"
+				android:gravity="center"
+				android:checked="true"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_segment_left"
+				android:textColor="@color/radio_colors" />
+			<RadioButton
+				android:id="@+id/btn_listino_completo"
+				android:minWidth="250dip"
+				android:minHeight="50dip"
+				android:text="@string/listino_completo"
+				android:button="@null"
+				android:gravity="center"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_segment_middle"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/radio_colors" />
+			<RadioButton android:id="@+id/btn_prodotti_rilevati"
+				android:minWidth="250dip"
+				android:minHeight="50dip"
+				android:text="@string/prodotti_rilevati"
+				android:button="@null"
+				android:gravity="center"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_segment_right"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/radio_colors" />
+
+
+		</com.eteam.dufour.customview.SegmentedRadioGroup>
+
+	</RelativeLayout>
+
+	<View
+		android:id="@+id/divider_six"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_below="@id/buttons_rl"
+		android:background="#A4BAC8"/>
+
+	<RelativeLayout
+		android:id="@+id/tv5"
+		android:layout_width="fill_parent"
+		android:layout_height="25dip"
+		android:layout_below="@id/divider_six"
+		android:background="#86A0AF" >
+		<TextView android:id="@+id/listed_no"
+			android:layout_marginLeft="15dip"
+			android:layout_width="wrap_content"
+			android:layout_height="20dip"
+			android:textColor="#000000"
+
+			/>
+		<TextView android:id="@+id/of"
+			android:layout_marginLeft="10dip"
+			android:layout_width="wrap_content"
+			android:layout_height="20dip"
+			android:text="@string/of"
+			android:textColor="#000000"
+			android:layout_toRightOf="@id/listed_no"
+			/>
+		<TextView android:id="@+id/total_no"
+			android:layout_marginLeft="10dip"
+			android:layout_width="wrap_content"
+			android:layout_height="20dip"
+			android:textColor="#000000"
+			android:layout_toRightOf="@id/of"
+			/>
+		<TextView android:id="@+id/field_status"
+			android:layout_marginLeft="10dip"
+			android:layout_width="wrap_content"
+			android:layout_height="20dip"
+			android:text="@string/products_inassorti"
+			android:textColor="#000000"
+			android:layout_toRightOf="@id/total_no"
+			/>
+	</RelativeLayout>
+
+	<View
+		android:id="@+id/divider_seven"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_below="@id/tv5"
+		android:background="#ABBDC7"/>
+
+
+	<com.tjerkw.slideexpandable.library.ActionSlideExpandableListView
+		android:id="@+id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@android:color/white"
+		android:cacheColorHint="#00000000"
+		android:focusable="false"
+		android:divider="#A1B3C0"
+		android:dividerHeight="1px"
+		android:listSelector="@android:color/transparent"
+		android:layout_below="@id/divider_seven"
+		android:descendantFocusability="beforeDescendants"/>
+
+	<TextView
+		android:id="@+id/empty_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/divider_seven"
+		android:layout_marginTop="10dp"
+		android:text="@string/msg_empty_prodotti"
+		android:textColor="@android:color/black"
+		android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

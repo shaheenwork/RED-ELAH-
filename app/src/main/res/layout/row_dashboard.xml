@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:weightSum="5.003"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/lyt_val1"
+        android:background="@color/d_light_grey"
+        android:padding="@dimen/padding_8"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Categoria"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tv_val1"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/circle"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <View
+            android:layout_width="14dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/circle"
+            android:layout_marginLeft="2dp"
+            android:layout_height="14dp"
+            android:background="@drawable/circle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="1dp"
+        android:id="@+id/lyt_val2"
+        android:background="@color/d_grey"
+        android:padding="@dimen/padding_8"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Categoria"
+            android:id="@+id/tv_val2"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_alignParentStart="true"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/lyt_val3"
+        android:layout_marginLeft="1dp"
+        android:background="@color/d_grey"
+        android:gravity="center"
+        android:padding="@dimen/padding_8"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Categoria"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:id="@+id/tv_val3"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_alignParentStart="true"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:id="@+id/lyt_val4"
+        android:gravity="center"
+        android:background="@color/d_grey"
+        android:padding="@dimen/padding_8"
+        android:layout_marginLeft="1dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Categoria"
+            android:id="@+id/tv_val4"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_alignParentStart="true"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/lyt_val5"
+        android:gravity="center"
+        android:layout_marginLeft="1dp"
+        android:background="@color/d_grey"
+        android:padding="@dimen/padding_8"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Categoria"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tv_val5"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

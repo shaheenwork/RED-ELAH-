@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "478645525087",
+    "firebase_url": "https://elah-5cdd0.firebaseio.com",
+    "project_id": "elah-5cdd0",
+    "storage_bucket": "elah-5cdd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478645525087:android:9cba7f62a314a5046319ea",
+        "android_client_info": {
+          "package_name": "com.eteam.dufour.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478645525087-h8mb3n5t425rp8njhgv17as96gmlicjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBSYpPiyoK95FMQZxRtiGt2nKUPCTF1Sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478645525087-h8mb3n5t425rp8njhgv17as96gmlicjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
