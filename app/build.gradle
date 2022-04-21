@@ -20,8 +20,8 @@ android {
         // versionCode 48
         // versionName "6.21 (Android Production)"
 
-        versionCode 60
-        versionName "6.30 (RED Production)"
+        versionCode 61
+        versionName "6.31 (RED Production)"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

@@ -230,7 +230,8 @@ public class AdapterAssortimento extends BaseAdapter {
             });
 
 
-            holder.mPrezzoEdit.setOnTouchListener(new View.OnTouchListener() {
+            // Auto-selection when clicking on edittext
+         /*   holder.mPrezzoEdit.setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
                     if (event.getAction() == MotionEvent.ACTION_UP) {
@@ -259,6 +260,37 @@ public class AdapterAssortimento extends BaseAdapter {
                                 holder.mPromoEdit.selectAll();
                             }
                         }, 200);
+                    }
+                    return false;
+                }
+            });*/
+
+            // cursor at end
+            holder.mPrezzoEdit.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_UP) {
+                        holder.mPrezzoEdit.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                holder.mPrezzoEdit.setSelection(holder.mPrezzoEdit.getText().length());
+                            }
+                        }, 0);
+                    }
+                    return false;
+                }
+            });
+
+            holder.mPromoEdit.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_UP) {
+                        holder.mPromoEdit.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                holder.mPromoEdit.setSelection(holder.mPromoEdit.getText().length());
+                            }
+                        }, 0);
                     }
                     return false;
                 }

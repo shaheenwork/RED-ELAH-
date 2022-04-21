@@ -21,7 +21,7 @@ public class Consts {
 	public static final String DB_NAME = "elahPreProd.db";*/
 
     /*--------------------------------------------------------------------------------------------------------------------------------*/
-  /*  //ELAH TEST FROM (19-05-2014)
+   /* //ELAH TEST FROM (19-05-2014)
 	//public static final String SERVER_URL 	= "http://test.elah-dufour.it/portal-test/mobile"; //old
      public static final String SERVER_URL 	= "http://test.elah-dufour.it/portal-test-2016/mobile"; //new
 //	public static final String SERVER_URL 	= "http://192.168.0.84:8080/elah2016/mobile"; //manu local
